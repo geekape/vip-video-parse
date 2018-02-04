@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, .5) 0 0 5px 1px;
+    height: 50px
+}
+
+.header .nav {
+    margin: 0 auto;
+    width: 1120px;
+    padding: 0 10px
+}
+
+.header .nav>a {
+    font-size: 2rem;
+    color: #05A2D7;
+    margin-right: 3px
+}
+
+.header .nav .bar {
+    float: right;
+    list-style: none;
+    height: 50px;
+    text-align: right
+}
+
+.header .nav .bar li {
+    line-height: 50px;
+    float: left;
+    margin-left: 30px
+}
+
+.header .nav .bar li a {
+    color: #646c7a
+}
+
+.header .nav .bar .active,
+.header .nav .bar>li>a:hover {
+    color: #05A2D7
+}

@@ -1,0 +1,270 @@
+// var
+@main-color:#646c7a;
+.auto{
+	margin: 0 auto;
+	width: 1120px;
+	padding: 0 10px;
+}
+.gradient(@start, @end) {
+	background: linear-gradient(@start, @end);
+	background: -webkit-linear-gradient(@start, @end);
+	background: -o-linear-gradient(@start, @end);
+	background: -moz-linear-gradient(@start, @end);
+}
+
+// reset
+html, body, aside, div, p, nav, a,
+i, ul, li, section, img, footer,
+select, input{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body {
+	font-family: Microsoft YaHei,Arial,Helvetica,sans-serif;
+	font-size: 1rem;
+	color: @main-color;
+	overflow: hidden;
+}
+
+// base
+.clear{clear: both;}
+
+
+// 导航
+.header{
+	width: 100%;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 1px;
+	height: 50px;
+	
+	.nav {
+		.auto;
+		>a {
+			font-size: 2rem;
+			color: #05A2D7;
+			margin-right: 3px;
+		}
+		.bar {
+			float: right;
+			list-style: none;
+			height: 50px;
+			text-align: right;
+			li {
+				line-height: 50px;
+				float: left;
+				margin-left: 30px;
+				a {
+					color: @main-color;
+				}
+			}
+			.active,>li>a:hover {
+				color: #05A2D7;
+			}
+		}
+		
+	}
+}
+
+
+// 主要内容
+.main {
+	.auto;
+	.video{
+		background: @main-color;
+
+	}
+	.tv-title{
+		background: #515151;
+	    margin-top: 20px;
+	    color: #fff;
+	    border-top-left-radius: 5px;
+	    border-top-right-radius: 5px;
+	    padding: 10px 0 10px 20px;
+		h1{
+		    display: inline;
+		    font-size: 1.2em;
+		    font-weight: normal;
+		}
+		span{
+		    color: #b3b3b3;
+		}
+	}
+}
+
+
+
+
+// vip解析框
+.parse {
+	margin: 20px 0;
+	
+	.import,select,.btn{
+		height: 40px;
+	}
+	.import {
+		width: 80%;
+	    border: 1px solid #89d3ff;
+	    outline: none;
+	    padding-left: 10px;
+	}
+	select {
+		width: 10%;
+		border: 1px solid #89d3ff;
+	}
+	.btn {
+		width: 9%;
+		cursor: pointer;
+	    background: #03A9F4;
+	    .gradient(#43a2d7,#2196F3);
+	    color: #fff;
+	    border: 0;
+	    &:hover {
+			.gradient(#2196F3,#1e7cc7);
+	    }
+	}
+}
+.website h2,
+.comment h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-left: 5px solid #0480aa;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+// 支持网站
+.website {
+	
+	.row{
+		margin-bottom: 20px;
+		flex-direction: row;
+    	flex-wrap: wrap;
+		.box{
+		    padding: 5px;
+		    display: inline-block;
+	        border: 1px solid #e4ecf3;
+    		box-shadow: 1px 2px 3px #f2f6f8;
+    		cursor: pointer;
+    		transition: all .5s;
+    		margin-bottom: 10px;
+    		&:hover{
+    			transform: translateY(-10px);
+    		}
+		}
+	}
+}
+
+
+// 侧边工具栏
+.sidebar{
+	list-style: none;
+    position: fixed;
+    padding: 14px 2px;
+    right: 0;
+    bottom: 5%;
+    border-radius: 20px 0 0 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 1px rgba(0,85,255,.1);
+    z-index: 10;
+    li {
+	    width: 56px;
+	    height: 60px;
+	    padding: 2px;
+	    color: #23ade5;
+	    text-align: center;
+	    border-radius: 8px;
+	    cursor: pointer;
+	    a{
+	    	color: #23ade5;
+	    	font-size: 14px;
+	    	transition: all .5s;
+	    	&:hover i{
+	    		animation: bounce cubic-bezier(0, 0, 0.34, 1.41) 1.5s infinite;
+	    	}
+	    }
+    }
+    .feedback {
+		i {
+		    background-position: 0 -24em;
+		}
+    }
+    .comment-btn {
+		i {
+		    background-position: 0 -17em;
+		}
+    }
+    .go-top {
+		i {
+		    background-position: 0 -87em;
+		}
+    }
+} 
+@keyframes bounce{
+	0% {
+    	transform: translate(0) scale(1);
+	}
+	10% {
+	    transform: translateY(5px) scale(.8);
+	}
+	30% {
+	    transform: translateY(-15px) scale(.95);
+	}
+	45% {
+	    transform: translateY(5px) scale(.8);
+	}
+	50% {
+	    transform: translate(0) scale(1);
+	}
+	53% {
+	    transform: translate(0) scale(.9);
+	}
+	55% {
+	    transform: translate(0) scale(1);
+	}
+	57% {
+	    transform: translate(0) scale(.9);
+	}
+	61% {
+	    transform: translate(0) scale(1);
+	}
+	100% {
+	    transform: translate(0) scale(1);
+	}
+}
+// svg
+.icon-svg{
+	background-position: 0 0em;
+    width: 1em;
+    height: 1em;
+	vertical-align: middle;
+    background-image: url(../img/icon.svg);
+    background-repeat: no-repeat;
+    background-size: 1em 107em;
+    display: block;
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+// 响应式
+@media (max-width: 768px) {
+	.bar{display: none;}
+	.main{
+		width: 100%;
+		iframe{
+			height: 300px!important;
+		}
+		.import{
+			width: 55%;
+		}
+		select{
+			width: 20%;
+		}
+		.btn{
+			width: 20%;
+		}
+	}
+}

@@ -78,15 +78,7 @@ Ho~　★★★★★★
 					    	<textarea name="aik[description]" cols="150" rows="3"><?php echo $aik['description']?></textarea>
 					    </td>
 					</tr>
-					<tr>
-					    <td width="125" align="right" valign="middle" class="s_title">导航微博窗：</td>
-					    <td valign="top">
-					    	<input type="text" name="aik[weibourl]" placeholder="请输入您的微博链接" class="shuru" value="<?php echo $aik['weibourl']?>" size="50"><br/>
-					    	<span class="gray tips">位置在导航微博图标下方>>------<a href="http://app.weibo.com/tool/weiboshow" target="_blank">点击获取微博秀</a></span>
-					    	<div class="cl5"></div>
-					    	<textarea name="aik[weibo]" cols="150" rows="5"><?php echo $aik['weibo']?></textarea>
-					    </td>
-					</tr>
+					
 					<tr>
 					    <td width="125" align="right" valign="middle" class="s_title">首页公告：</td>
 					    <td valign="top">
@@ -121,29 +113,9 @@ Ho~　★★★★★★
 							<input type="text" name="aik[jiekou10name]" class="shuru" placeholder="名称：" value="<?php echo $aik['jiekou10name']?>" size=20" ><input type="text" name="aik[jiekou10]" placeholder="接口url：" class="shuru" value="<?php echo $aik['jiekou10']?>" size="80" ><br/>
 					    </td>
 					</tr>
-					<tr>
-					    <td width="125" align="right" valign="middle" class="s_title">导航设置：</td>
-					    <td valign="top">
-					    	<span class="gray tips">不添加可留空。新增导航链接，图标：请添加在li下面'<xmp style="display: inline-block;background: #FA584E;color: #fff;font-size: 9px;"><span class="ico-new"></span></xmp>'</span>
-					    	<div class="cl5"></div>
-					    	<textarea name="aik[topnav]" cols="150" rows="5"><?php echo $aik['topnav']?></textarea>
-					    </td>
-					</tr>
-					<tr>
-					    <td width="125" align="right" valign="middle" class="s_title">侧滑广告：</td>
-					    <td valign="top">
-					    	<div class="cl5"></div>
-					    	<textarea name="aik[ch1]" cols="150" rows="5" placeholder="不开启请留空。"><?php echo $aik['ch1']?></textarea>
-					    </td>
-					</tr>
-					<tr>
-					    <td width="125" align="right" valign="middle" class="s_title">播放器下方广告：</td>
-					    <td valign="top">
-					    	<div class="cl5"></div>
-					    	<textarea name="aik[guanggao]" cols="150" rows="5" placeholder="不开启请留空。"><?php echo $aik['guanggao']?></textarea>
-					    	
-					    </td>
-					</tr>
+					
+					
+					
 					<tr>
 					    <td width="125" align="right" valign="middle" class="s_title">畅言配置：</td>
 					    <td valign="top">
@@ -152,12 +124,7 @@ Ho~　★★★★★★
 					    	<textarea name="aik[changyan]" cols="150" rows="5"><?php echo $aik['changyan']?></textarea>
 					    </td>
 					</tr>
-					<tr>
-					    <td width="125" align="right" valign="middle" class="s_title">友情链接：</td>
-					    <td valign="top">
-					    	<textarea name="aik[homelink]" cols="150" rows="5"><?php echo $aik['homelink']?></textarea>
-					    </td>
-					</tr>
+					
 					<tr>
 					    <td width="125" align="right" valign="middle" class="s_title">ICP备案号：</td>
 					    <td width="690" valign="middle">

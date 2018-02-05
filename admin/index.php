@@ -21,7 +21,6 @@ Ho~　★★★★★★
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<?php include('inc.php'); ?>
-		<link rel="stylesheet" href="//at.alicdn.com/t/font_508626_r5vey6zoz3vunmi.css">
 		<style>
 			.zhuangtai-box{
 				width: 100%;

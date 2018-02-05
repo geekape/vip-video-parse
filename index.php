@@ -23,7 +23,7 @@
 				<h1 id="video-title">感谢您使用猿梦VIP视频解析服务,已自动为你播放一个MV</h1>
 			</div>
 			<div class="video">
-				<iframe id="palybox" src="<?php echo $aik['jiekou1'];?><?php echo $aik['maurl'];?>" allowtransparency frameborder="0" scrolling="no" width="100%" height="600"></iframe>
+				<iframe id="palybox" src="<?php echo $aik['jiekou1'];?><?php echo $aik['maurl'];?>" allowtransparency frameborder="0" scrolling="no" width="100%" height="600" ></iframe>
 			</div>
 			<div class="parse">
 				
@@ -64,7 +64,7 @@
 				<input class="btn" onclick="play()" type="submit" value="VIP解析">
 				
 			</div>
-			<p class="notice"><?php echo $aik['gonggao'];?></p>
+			<a class="notice" href="<?php echo $aik['gonggao-url'];?>"><?php echo $aik['gonggao'];?></a>
 			<div class="website">
 				<h2>支持网站</h2>
 				<div class="weblogo-list">
@@ -124,20 +124,29 @@
 				window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
 			</div>
 		</div>
+		<div class="footer">
+			<div class="box">
+				<p>Copyright © 2018- 2050 . 赣ICP备17015743号 .<a href="http://www.zcbboke.com">极客猿梦博客</a>  <?php echo $aik['tongji'];?></p>
+
+			</div>
+			
+		</div>
 		<ul class="sidebar">
 			<li><a href="#" class="feedback"><i class="icon-svg"></i>反馈</a></li>
 			<li><a href="#comment" class="comment-btn"><i class="icon-svg"></i>评论</a></li>
 			<li><a href="#" class="go-top"><i class="icon-svg"></i>顶部</a></li>
 		</ul>
 	</div>
-	<script>
-		console.log("%c%c源码作者%c猿梦", "line-height:28px;", "line-height:28px;padding:4px;background:#222;color:#FADFA3;font-size:14px;", "padding:4px;background:#FADFA3;color:#000;line-height:28px;font-size:14px;");
-		console.log("%c%c网站地址%chttp://www.zcbboke.com", "line-height:28px;", "line-height:28px;padding:4px;background:#222;color:#FADFA3;font-size:14px;", "padding:6px 6px 6px 2px;background:#FADFA3;color:#0093fff;line-height:28px;font-size:12px;");
-		console.log("%c%c新浪微博%c猿梦的故事", "line-height:28px;", "line-height:28px;padding:4px;background:#222;color:#FADFA3;font-size:14px;", "padding:4px;background:#FADFA3;color:red;line-height:28px;font-size:14px;");
-		console.log("%c%c就知道阻挡不住你观看源码的冲动，但你至少要记住我！-----猿梦", "line-height:28px;", "line-height:28px;padding:4px 0px;color:#fff;font-size:16px;background-image:-webkit-gradient(linear,left top,right top,color-stop(0,#ff22ff),color-stop(1,#5500ff));color:transparent;-webkit-background-clip:text;");
-	</script>
+
 	
 	<script src="js/jquery.js"></script>
 	<script src="js/tv-yuanmeng.js"></script>
+	<script>
+		
+		console.log("%c%cVIP视频解析github项目地址：https://github.com/geekape/vip-video-parse", "line-height:28px;", "line-height:28px;padding:4px 0px;color:#fff;font-size:16px;background-image:-webkit-gradient(linear,left top,right top,color-stop(0,#ff22ff),color-stop(1,#5500ff));color:transparent;-webkit-background-clip:text;");
+
+
+
+	</script>
 	
 </html>

@@ -2,7 +2,7 @@
 @main-color:#646c7a;
 .auto{
 	margin: 0 auto;
-	width: 1120px;
+	max-width: 1120px;
 	padding: 0 10px;
 }
 .gradient(@start, @end) {
@@ -22,12 +22,14 @@ select, input{
 }
 a{
 	text-decoration: none;
+	color: #05A2D7;
+
 }
 body {
 	font-family: Microsoft YaHei,Arial,Helvetica,sans-serif;
 	font-size: 1rem;
 	color: @main-color;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 // base
@@ -101,7 +103,7 @@ body {
 // vip解析框
 .parse {
 	margin: 20px 0;
-	
+	line-height: 50px;
 	.import,select,.btn{
 		height: 40px;
 	}
@@ -151,6 +153,7 @@ body {
     		cursor: pointer;
     		transition: all .5s;
     		margin-bottom: 10px;
+			margin: 0 2px 2px 0;
     		&:hover{
     			transform: translateY(-10px);
     		}
@@ -249,22 +252,37 @@ body {
     font-size: 2em;
 }
 
+
+
+// 页脚
+.footer {
+	margin-top: 20px;
+	background: #fff;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 1px;
+	.box{
+		.auto;
+		padding: 10px 0;
+		font-size: .8em;
+	}
+
+}
+
 // 响应式
-@media (max-width: 768px) {
+
+@media screen and (max-width: 780px) {
 	.bar{display: none;}
 	.main{
 		width: 100%;
 		iframe{
 			height: 300px!important;
 		}
-		.import{
-			width: 55%;
+		.import, select, .btn{
+			width: 100%;
 		}
-		select{
-			width: 20%;
-		}
-		.btn{
-			width: 20%;
-		}
+		
+		
 	}
 }
+
+

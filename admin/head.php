@@ -1,7 +1,7 @@
 <div id="header">
   <div class="con">
     <h1 class="logo png">
-    	<a href="./" title="猿梦影院管理系统"><i class="iconfont icon-movie"></i>猿梦VIP影院</a>
+    	<a href="./" title="极客猿梦VIP解析">极客猿梦VIP解析</a>
     </h1>
     <div class="aik_info">
     	<a href="../" target="_blank">网站首页</a>，欢迎您，<?php echo $aik['admin_name']?>，<a href="./login.php?act=logout">退出</a>

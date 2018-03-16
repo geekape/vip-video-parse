@@ -141,12 +141,8 @@
 	
 	<script src="js/jquery.js"></script>
 	<script src="js/tv-yuanmeng.js"></script>
-	<script>
-		
+	<script>	
 		console.log("%c%cVIP视频解析github项目地址：https://github.com/geekape/vip-video-parse", "line-height:28px;", "line-height:28px;padding:4px 0px;color:#fff;font-size:16px;background-image:-webkit-gradient(linear,left top,right top,color-stop(0,#ff22ff),color-stop(1,#5500ff));color:transparent;-webkit-background-clip:text;");
-
-
-
 	</script>
 	
 </html>

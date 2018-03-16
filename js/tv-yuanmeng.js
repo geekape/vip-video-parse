@@ -25,6 +25,7 @@ function play() {
 			
 			if(xhr.readyState == 4 && xhr.status == 200) {
 				tittext.innerHTML = xhr.responseText; //获取服务器响应数据
+				console.log(title.php);
 			}
 		}
 
